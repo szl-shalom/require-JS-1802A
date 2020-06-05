@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 800px;
+    margin: auto;
+}
+
+.wrap dl {
+    width: 200px;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+dl b {
+    float: right;
+    display: none;
+}
+
+dl:hover b {
+    display: block;
+}
+
+dl dt {
+    line-height: 50px;
+    text-align: center;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 300px;
+    background: #fff;
+}
+
+.content p input {
+    width: 220px;
+    height: 36px;
+}
+
+.close,
+.ok {
+    float: right;
+}

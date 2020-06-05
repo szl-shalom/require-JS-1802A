@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/velocity.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script>
+        // var V = Velocity, box = document.querySelector(".box");
+        // 关键字动画
+        // V(元素,关键字)
+        // V(box, "fadeOut", 2000) //淡出动画
+        // V(box, "fadeIn", 2000) //淡入动画
+        // V(box, "slideUp", 2000) //上啦动画
+        // V(box, "slideDown", 2000) //下拉动画
+
+
+
+
+
+        // 语法规则
+        // V(元素,css对象，配置对象)
+        // 默认单位是PX, 如果css属性名称是多个单词，建议大家小驼峰  或者用字符串包起来
+        V(box, {
+            width: 500,
+            height: "500px",
+            marginLeft: "200px",
+            "margin-top": 200
+        }, {
+            duration: 500,//动画时间
+            begin: function () {//在动画开始之前会执行
+                console.log("动画开始执行了")
+            },
+            complete: function () { //在动画结束之后执行
+                console.log("动画执行结束了")
+            },
+            progress: function () { //动画运动中执行
+                console.log("动画执行中")
+            },
+            loop: 2,//循环
+            // delay: 2000, //延迟
+            // display: 'none', //动画结束的时候设置下display
+            easing: "swing",  // linear 线性   swing 摇摆  spring 弹性
+        })
+
+
+
+    </script>
+</body>
+
+</html>

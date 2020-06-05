@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            width: 500px;
+            height: 500px;
+            float: left;
+            position: relative;
+        }
+
+        .right {
+            width: 500px;
+            height: 500px;
+            float: left;
+            display: none;
+            overflow: hidden;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .left .mask {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        .right img {
+            width: 2500px;
+            height: 2500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="mask"></div>
+        <img src="file:///C:/Users/Administrator/Desktop/1803A/day6/tab+%E8%BD%AE%E6%92%AD/img/2.jpg" alt="">
+    </div>
+    <div class="right">
+        <img src="file:///C:/Users/Administrator/Desktop/1803A/day6/tab+%E8%BD%AE%E6%92%AD/img/2.jpg" alt="">
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

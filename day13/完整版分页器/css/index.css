@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    /* background-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet); */
+    background-image: url("../star.gif");
+    /* background-image: radial-gradient(red, orange, yellow, green, cyan, blue, violet); */
+    /* background-size: 100% 100%;
+    width: 100%;
+    height: 100%; */
+}
+.wrap {
+    width: 1000px;
+    margin: 100px auto;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: tomato 1px solid;
+}
+
+table tr {
+    height: 36px;
+    border: tomato 1px solid;
+}
+
+table th,
+table td {
+    border: tomato 1px solid;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.box span {
+    padding: 6px;
+    display: inline-block;
+}
+.box button {
+    padding: 6px 12px;
+}
+.box ul {
+    display: inline-block;
+}
+
+.box ul li {
+    display: inline-block;
+    padding: 6px 12px;
+    background: violet;
+    margin: 0 2px;
+}
+.box ul li.active {
+    background: skyblue;
+}
+
+.right {
+    float: right;
+}
+.code {
+    width: 60px;
+    height: 36px;
+}
+
+.num {
+    height: 36px;
+}

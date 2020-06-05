@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:600px;
+    margin: 100px auto;
+}
+
+.add{
+    width:220px;
+    height:46px;
+}
+
+h1 span{
+    float: right;
+}
+
+
+ul li b{
+    float: right;
+}
+
+ul li{
+    line-height: 60px;
+    padding-left:20px;
+    border-bottom:1px solid #ccc;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+        //          0    1    2    3    4    5    6    7    8
+
+        // 数组里面每 3个元素 分成一组
+        // 通过观察 会发现开启下标和结束下标有联系  差3
+        // ["a","b","c"]
+        var res1 = arr.slice(0, 3); // 第1组  下标0   每组3个元素   开始下标0
+        // ["d", "e", "f"]
+        var res2 = arr.slice(3, 6); // 第2组  下标1   每组3个元素   开始下标3
+        // ["g", "h", "i"]
+        var res3 = arr.slice(6, 9); // 第3组  下标2   每组3个元素   开始下标6
+        // ... 要 n + 1 组
+                                    // 第n+1组 下标n  每组3个元素  开始下标3*n
+
+
+                           
+        // arr.slice( 开始下标，结束下标  )
+        // 返回从数组开始下标截取到结束下标的所有元素
+        // 包含开始下标 不包含结束下标
+
+    </script>
+</body>
+
+</html>

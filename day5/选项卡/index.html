@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title span {
+            display: inline-block;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+        }
+
+        .title span.active {
+            background: skyblue;
+            color: #fff;
+        }
+
+        .title span.active1 {
+            background: red;
+            color: #fff;
+        }
+
+        .content .con {
+            display: none;
+        }
+
+        .content .con.active {
+            display: block;
+        }
+
+        .content .con.active1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="title">
+            <span>标题1</span>
+            <span>标题2</span>
+            <span>标题3</span>
+            <span>标题4</span>
+        </div>
+        <div class="content">
+            <div class="con">内容1</div>
+            <div class="con">内容2</div>
+            <div class="con">内容3</div>
+            <div class="con">内容4</div>
+        </div>
+
+
+
+
+
+
+        <div class="box">
+            <span class="title">
+                <span>标题1</span>
+                <span>标题2</span>
+                <span>标题3</span>
+                <span>标题4</span>
+            </span>
+            <div class="content">
+                <div class="con">内容1</div>
+                <div class="con">内容2</div>
+                <div class="con">内容3</div>
+                <div class="con">内容4</div>
+            </div>
+        </div>
+
+
+        <div class="box1">
+            <span class="title">
+                <span>标题1</span>
+                <span>标题2</span>
+                <span>标题3</span>
+                <span>标题4</span>
+            </span>
+            <div class="content">
+                <div class="con">内容1</div>
+                <div class="con">内容2</div>
+                <div class="con">内容3</div>
+                <div class="con">内容4</div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

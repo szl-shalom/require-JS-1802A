@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:10000px;
+        }
+        li {
+            list-style: none;
+        }
+
+        .floor li {
+            width: 500px;
+            height: 500px;
+            background: green;
+            color: #fff;
+            line-height: 500px;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        .floor li:nth-child(even) {
+            background: red;
+        }
+
+        .floor-middle {
+            position: fixed;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 600px;
+        }
+
+        .floor-middle li {
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #ccc;
+        }
+
+        .floor-middle li.active {
+            background: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="floor">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <ul class="floor-middle">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

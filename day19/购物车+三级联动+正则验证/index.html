@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="car">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            全选
+                            <input type="checkbox" class="check-all">
+                        </th>
+                        <th>
+                            商品名称
+                        </th>
+                        <th>
+                            单价
+                        </th>
+                        <th>
+                            数量
+                        </th>
+                        <th>
+                            小计
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="check-one">
+                        </td>
+                        <td>
+                            口罩
+                        </td>
+                        <td class="price">
+                            10
+                        </td>
+                        <td>
+                            <button class="red">-</button>
+                            <span calss="num">2</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td class="lit">
+                            20
+                        </td>
+                        <td>
+                            <button class="del">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="check-one">
+                        </td>
+                        <td>
+                            口罩
+                        </td>
+                        <td class="price">
+                            10
+                        </td>
+                        <td>
+                            <button class="red">-</button>
+                            <span calss="num">2</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td class="lit">
+                            20
+                        </td>
+                        <td>
+                            <button class="del">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="check-one">
+                        </td>
+                        <td>
+                            口罩
+                        </td>
+                        <td class="price">
+                            10
+                        </td>
+                        <td>
+                            <button class="red">-</button>
+                            <span calss="num">2</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td class="lit">
+                            20
+                        </td>
+                        <td>
+                            <button class="del">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="price-all">
+                总价钱：45666元，
+                总数量：13个
+            </h2>
+        </div>
+        <div class="box">
+            <div class="reg">
+                <p>
+                    <b>姓名：</b>
+                    <input type="text" placeholder="请输入姓名" class="username">
+                    <span>请输入2-4个汉字</span>
+                </p>
+                <p>
+                    <b>手机：</b>
+                    <input type="text" placeholder="请输入姓名" class="tel">
+                    <span>请输入正确的手机号</span>
+                </p>
+            </div>
+            <div class="sanji">
+                <b>三级联动:</b>
+                <select name="" id="" class="province">
+                    <option value="">请选择省</option>
+                </select>
+                <select name="" id="" class="city">
+                    <option value="">请选择市</option>
+                </select>
+                <select name="" id="" class="area">
+                    <option value="">请选择区</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

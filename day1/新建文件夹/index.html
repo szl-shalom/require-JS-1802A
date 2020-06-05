@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // 陈姗姗
+        // console.log(a)  //函数
+        // var a = 1;
+        // console.log(a) // 1
+        // var a = 2;
+        // console.log(a) // 2
+
+
+        // // 张佳静
+        // function a() {
+
+        // }
+        // console.log(a)  //2
+
+        // 变量冲突问题解决
+
+        (function () {
+            var a = 1;
+            console.log(a)   //1
+            var c = 3
+            console.log(c)  //3
+
+            window.lcy = {
+                a: a,
+                c: c
+            }
+        })();
+        // 使用 a 变量 
+        console.log(lcy);
+
+
+        (function () {
+            var a = 2;
+            console.log(a)  //2
+            var c = 4
+            console.log(c) // c is not defined
+            window.yt = {
+                a: a,
+                c: c
+            }
+        })()
+        console.log(yt)
+    </script>
+
+</body>
+
+</html>

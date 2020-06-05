@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "erwer1_qwewe2_erwerwer3_qweqweqwe4_qweqweqweq5";
+        var res = /([a-z])+(\d)_?/g;
+        var s = str.replace(res, function ($0, $1, $2, $3, $4) {
+            return $2 % 2 === 1 ? !$3 ? $0 : $0[0].toUpperCase() + $0.slice(1) : ""
+        });
+
+
+        function fun(num) {
+            var arr = [];
+
+            function f(num) {
+                if (num <= 10000) {
+                    arr.push(num)
+                    f(num + 1)
+                }
+                return
+
+            }
+            f(0)
+            return arr;
+        }
+        // var res = fun(0)
+        // console.log(res)
+
+
+        var obj = { a: 1 }
+        var obj1 = { b: 1 }
+
+        function ff(obj1, obj2) {
+
+        }   
+    </script>
+</body>
+
+</html>

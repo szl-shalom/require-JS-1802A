@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background: #555;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+}
+
+ul {
+    width: 100%;
+    position: relative;
+}
+
+ul li {
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+ul li img {
+    width: 100%;
+}

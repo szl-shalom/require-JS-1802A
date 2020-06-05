@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.login {
+    width: 120px;
+    height: 40px;
+    background: skyblue;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.box dl {
+    width: 250px;
+    float: left;
+    padding: 10px;
+}
+
+.box dl dd {
+    width: 100%;
+    height: 150px;
+}
+
+.box dl dd img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.box dl dd dt {
+    text-align: center;
+    line-height: 30px;
+}
+
+.bottom {
+    text-align: center;
+}
+.bottom ul {
+    display: inline-block;
+}
+
+.bottom ul li {
+    display: inline-block;
+}
+
+.bottom button,
+.bottom li {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.bottom button:hover,
+.bottom li:hover {
+    background: skyblue;
+}
+.bottom li.active {
+    background: red;
+    color: #fff;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    width: 260px;
+    /* height: 260px; */
+    border-radius: 25px;
+}
+
+.content .title span.active {
+    color: red;
+    font-weight: bold;
+}
+
+.con-content {
+    display: none;
+}
+
+.con-content.active {
+    display: block;
+}
+
+.con-content p {
+    margin: 10px 0;
+}
+.con-content p input {
+    width: 220px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.content b {
+    float: right;
+}
+
+.content p span {
+    color: red;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+}

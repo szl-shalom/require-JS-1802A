@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.car {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table tr {
+    height: 36px;
+}
+
+.red,
+.add {
+    padding: 0 6px;
+}
+
+.price-all {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 20px 20px;
+}
+
+.reg p {
+    line-height: 40px;
+}
+
+.reg p input {
+    width: 220px;
+    height: 30px;
+}
+
+.reg p span {
+    color: red;
+    font-weight: bold;
+}
+.sanji {
+    margin: 20px 0;
+}
+
+.sanji select {
+    width: 120px;
+    height: 30px;
+}

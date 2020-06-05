@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .content{
+            position: fixed;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            padding:20px;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        .content b{
+            float: right;
+        }
+
+        .content img{
+            width:600px;
+            height:400px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1747053371,1579243540&fm=26&gp=0.jpg" alt="">
+    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3214335206,3249118592&fm=26&gp=0.jpg" alt="">
+    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1701254699,2556403221&fm=26&gp=0.jpg" alt="">
+    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=457157450,4095721543&fm=11&gp=0.jpg" alt="">
+
+
+    <!-- <div class="mask"></div>
+    <div class="content">
+        <b>X</b>
+        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1747053371,1579243540&fm=26&gp=0.jpg" alt="">
+    </div> -->
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

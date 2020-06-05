@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box i {
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            box-shadow: 0 2px, 4px 2px, 8px 2px;
+            animation: dot 1s infinite;
+            animation-timing-function: step-start;
+        }
+
+        @keyframes dot {
+
+            0%,
+            100% {
+                box-shadow: 0 2px, 4px 2px, 8px 2px;
+            }
+
+            33% {
+                box-shadow: 0 2px;
+            }
+
+            66% {
+                box-shadow: 0 2px, 4px 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        加载中<i></i>
+    </div>
+</body>
+
+</html>
